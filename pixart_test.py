@@ -1,24 +1,26 @@
 import pixart
 import turtle
 
-
 def test_init():
     pixart.init()
 
-    s = turtle.speed(0)
-    assert(s == 0)
+    s=turtle.speed()
+    assert(s==0)
 
-    x = turtle.xcor()
-    assert(x == -270)
+    x=turtle.xcor()
+    assert(x==-200)
 
-    y = turtle.ycor()
-    assert(y == -300)
+    y=turtle.ycor()
+    assert(y == -270)
 
-    turtle.isdown()
-    assert(turtle.isdown == False)
+    p=turtle.isdown()
+    assert(p == False)
 
-    turtle.pencolor()
-    assert(turtle.pencolor == 'Black')
+    c=turtle.pencolor()
+    assert(c == 'black')
 
-    turtle.fillcolor()
-    assert(turtle.fillcolor == 'white')
+    f=turtle.fillcolor()
+    assert(f == 'white')
+
+
+
